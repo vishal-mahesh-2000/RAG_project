@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-rag-pdf-qa"
+version = "0.1.0"
+description = "A local RAG-based PDF question answering system"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3

@@ -1,0 +1,16 @@
+{
+    "embedding_model": "all-MiniLM-L6-v2",
+    "ollama_url": "http://localhost:11434",
+    "model": "llama2",
+    "chunk_size": 1000,
+    "search_results_count": 5,
+    "data_paths": {
+        "pdfs": "data/pdfs",
+        "faiss_indexes": "data/faiss_indexes",
+        "chat_history": "data/chat_history"
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "logs/app.log"
+    }
+}
